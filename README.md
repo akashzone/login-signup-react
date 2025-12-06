@@ -1,16 +1,59 @@
-# React + Vite
+# React Login & Sign-Up Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and clean Login/Sign-Up system built using **React + Vite**, featuring:
 
-Currently, two official plugins are available:
+- 🔐 Sign Up with username, email & password  
+- 🔑 Login validation using stored credentials  
+- 💾 LocalStorage integration  
+- ✔ Input validation  
+- 🎨 Clean UI with conditional rendering  
+- 🔁 Switch between Login & Sign-Up modes  
+- ✨ Success screens for Sign-Up & Login  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### ✅ Sign Up  
+- Stores user data in LocalStorage  
+- Validates if all fields are filled  
+- Shows success screen after sign-up  
 
-## Expanding the ESLint configuration
+### ✅ Login  
+- Validates user credentials with stored data  
+- Displays success or error message  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### ✅ UI  
+- Single component handling both forms  
+- Clean conditional rendering  
+- Success messages replace the form  
+
+---
+
+## 📁 Project Structure
+
+src/
+├── components/
+│ ├── LoginSignUp.jsx
+│ └── LoginSignUp.css
+├── App.jsx
+├── main.jsx
+└── index.css 
+
+---
+
+## 🛠️ Tech Stack
+
+- **React**
+- **Vite**
+- **JavaScript**
+- **CSS**
+- **LocalStorage API**
+
+---
+
+## ▶️ How to Run Locally
+
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/akashzone/login-signup-react.git
