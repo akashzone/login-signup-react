@@ -57,3 +57,11 @@ src/
 1. Clone the repo:
    ```bash
    git clone https://github.com/akashzone/login-signup-react.git
+
+2. Install dependencies:
+
+--> npm install
+
+3. Run the project:
+
+--> npm run dev
