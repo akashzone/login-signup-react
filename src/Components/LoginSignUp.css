@@ -2,7 +2,8 @@
 .auth-box {
   margin: 0 auto;
   margin-top: 100px;
-  width: 380px;
+  width: 90%;
+  max-width: 380px;
   background: white;
   padding: 30px;
   border-radius: 16px;
@@ -22,7 +23,12 @@
 
 .tab {
   flex: 1;
+  min-width: 120px;
+  flex-wrap: wrap;
   padding: 12px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;   
   cursor: pointer;
   border: none;
   background: #e5e7eb;
@@ -52,6 +58,8 @@
 
 .form input {
   padding: 14px;
+  width: 100%;
+  box-sizing: border-box;
   margin-bottom: 12px;
   border-radius: 10px;
   border: 1px solid #ddd;
@@ -72,4 +80,34 @@
 #signupTab:hover {
     color : white;
   background: #065523;
+}
+
+/* Responsiveness */
+
+@media (max-width: 500px) {
+  .auth-box {
+    padding: 20px;
+    margin-top: 40px;
+  }
+
+  .form h2 {
+    font-size: 20px;
+  }
+  
+  .tabs{
+    flex-direction: column;   
+    gap: 10px; 
+  }
+  
+  .tab {
+    width: 100%;           
+    margin: 0;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .form input {
+    font-size: 14px;
+    padding: 12px;
+  }
 }
