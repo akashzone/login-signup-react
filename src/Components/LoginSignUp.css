@@ -1,0 +1,75 @@
+
+.auth-box {
+  margin: 0 auto;
+  margin-top: 100px;
+  width: 380px;
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 20px 20px rgba(83, 83, 83, 0.3);
+}
+
+#signupTab{
+    color : white;
+    background: #12833c;
+    margin-right: 10px;
+}
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.tab {
+  flex: 1;
+  padding: 12px;
+  cursor: pointer;
+  border: none;
+  background: #e5e7eb;
+  font-size: 16px;
+  border-radius: 10px;
+  transition: 0.25s;
+}
+
+.tab.active {
+  background: #2563eb;
+  color: white;
+}
+
+.form {
+  display: none;
+  flex-direction: column;
+}
+
+.form.active {
+  display: flex;
+}
+
+.form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form input {
+  padding: 14px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 15px;
+  transition: 0.2s;
+}
+
+.form input:focus {
+  border-color: #2563eb;
+  outline: none;
+  box-shadow: 0 0 4px rgba(37, 99, 235, 0.4);
+}
+
+#loginTab:hover {
+  background: #1e4fc7;
+}
+
+#signupTab:hover {
+    color : white;
+  background: #065523;
+}
